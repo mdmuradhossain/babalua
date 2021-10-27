@@ -27,6 +27,10 @@
   /* Font Weight */
   --font-medium: 500;
   --font-semi-bold: 600;
+
+  /* Z-Index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 
 *,
@@ -42,7 +46,6 @@ html {
 }
 
 body {
-  margin: var(--header-height) 0 0 0;
   font-family: var(--primary-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -79,4 +82,109 @@ input {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Header Section */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: rgba(79, 235, 144, 0.15);
+}
+
+.nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo img {
+  width: 129px;
+  height: 88px;
+}
+.nav__toggle {
+  color: var(--secondary-color);
+}
+
+.nav__toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__menu {
+  position: relative;
+}
+
+@media screen and (min-width: 340px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    padding: 3rem;
+    transition: 0.4s;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__menu {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__menu {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__menu {
+    width: 20%;
+  }
+}
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.nav__link {
+  color: var(--secondary-color);
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
+  transition: all 0.3s initial;
+}
+
+.nav__link:hover {
+  color: var(--primary-color);
+}
+
+.nav__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.show-menu {
+  right: 0;
+}
+
+/* change background header */
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle {
+  color: var(--title-color);
 }
