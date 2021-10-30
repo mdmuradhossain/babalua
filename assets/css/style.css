@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap");
 
 :root {
   --header-height: 5rem;
@@ -12,9 +12,11 @@
   --text-color-light: #a6a6a6;
   --body-color: #fbfefd;
   --container-color: #ffffff;
+  --white-color: #ffffff;
 
   /* Font */
-  --primary-font: "Open Sans", sans-serif;
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
