@@ -91,7 +91,13 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: rgba(79, 235, 144, 0.15);
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0, 0.7);
+  height: 90vh;
 }
 
 .nav {
@@ -99,12 +105,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: transparent;
 }
 
-.nav__logo img {
-  width: 129px;
-  height: 88px;
-}
+/* .nav__logo img {
+  width: 200px;
+  height: 100px;
+} */
 .nav__toggle {
   color: var(--secondary-color);
 }
@@ -118,6 +125,11 @@ img {
   position: relative;
 }
 
+@media screen and (min-width: 320px) {
+  /* .nav__menu {
+    display: none;
+  } */
+}
 @media screen and (min-width: 340px) {
   .nav__menu {
     position: fixed;
