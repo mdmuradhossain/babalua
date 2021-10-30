@@ -15,7 +15,6 @@
 
   /* Font */
   --primary-font: "Open Sans", sans-serif;
-  /* --secondary-font: "Dosis", sans-serif; */
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -51,6 +50,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   line-height: 1.6;
+  overflow: visible;
 }
 
 h1,
@@ -87,10 +87,6 @@ img {
 /* Header Section */
 .header {
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
