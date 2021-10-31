@@ -94,7 +94,7 @@ img {
 .header {
   width: 100%;
   background-image: url("../images/header.jpg"),
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -136,7 +136,7 @@ img {
 }
 
 .header-info {
-  padding-top: 260px;
+  padding-top: 270px;
   margin: 0 auto;
   text-align: center;
 }
@@ -166,7 +166,7 @@ img {
  -------- */
 
 .about {
-  padding: 100px 20px;
+  padding: 100px 60px;
   text-align: center;
 }
 
@@ -178,6 +178,7 @@ img {
 .about p {
   padding: 10px;
   font-size: 1.2rem;
+  word-wrap: break-word;
 }
 /*------------
  Let's Section
@@ -185,25 +186,30 @@ img {
 .lets-talk {
   width: 100%;
   height: 50vh;
-  background-image: url("../images/creative.jpg");
   background-size: cover;
+  background-image: url("../images/creative.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-blend-mode: overlay;
   text-align: center;
   padding-top: 150px;
   line-height: 2;
 }
 
 .lets-talk .title {
-  color: #000;
+  color: #0f111a;
   font-size: 1.2rem;
 }
 
 .lets-talk .lets-talk-heading-text {
   font-size: 2rem;
-  color: #000;
+  color: #0f111a;
 }
 
+.talk-btn {
+  padding-top: 10px;
+}
 .button.talk {
   background-color: #07aaa5;
   color: var(--white-color);
@@ -323,11 +329,21 @@ textarea {
   text-align: center;
 }
 
+.copyright {
+  padding-top: 15px;
+}
 .social-link {
   padding: 20px 0;
 }
+
 .social-link a {
+  padding: 10px;
   color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.social-link a:hover {
+  color: var(--white-color);
 }
 .down-footer {
   text-align: center;
@@ -337,29 +353,28 @@ textarea {
 .down-footer a {
   color: var(--text-color);
   font-size: 1rem;
-}
-/* --------
-  Service
-  -------- */
-
-.service {
-  display: grid;
+  transition: all 0.3s ease;
 }
 
-.services {
-  grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
-}
-
-.services img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.down-footer a:hover {
+  color: var(--white-color);
 }
 
 @media screen and (min-width: 320px) {
-  /* .nav__menu {
-    display: none;
-  } */
+  .nav__menu {
+    position: fixed;
+    background-color: #292929;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    padding: 3rem;
+    transition: 0.4s;
+  }
+  .nav a {
+    color: var(--text-color);
+  }
 }
 @media screen and (min-width: 340px) {
   .nav__menu {
@@ -387,6 +402,60 @@ textarea {
 @media screen and (min-width: 1024px) {
   .nav__menu {
     width: 30%;
+  }
+
+  .header-title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .header-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .about p {
+    padding: 10px 60px;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+  }
+  .contact {
+    flex-direction: row;
+  }
+
+  .up-footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .button.talk {
+    padding: 15px 30px;
+  }
+
+  .getintouch-btn {
+    padding: 20px 40px;
+  }
+
+  .visit-us h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .visit-us span {
+    font-size: 1.5rem;
+  }
+  .address .addess-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .address span {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .schedule span {
+    font-size: 1rem;
+    font-weight: 600;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -416,7 +485,7 @@ textarea {
   top: 0.75rem;
   right: 1rem;
   font-size: 1.5rem;
-  color: var(--secondary-color);
+  color: var(--text-color);
   cursor: pointer;
 }
 
