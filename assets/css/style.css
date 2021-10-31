@@ -176,12 +176,12 @@ img {
 
 .about-btn:hover {
   background-color: #82b440;
-  border: 1px solid #07aaa5;
+  border: 1px solid var(--white-color);
 }
 
 .contact-btn:hover {
   background-color: #07aaa5;
-  border: 1px solid #82b440;
+  border: 1px solid var(--white-color);
 }
 
 /* change background header */
@@ -299,7 +299,8 @@ form {
 }
 .input-group input,
 textarea {
-  background: #e1f5f5;
+  background: #dff0df;
+  /* background-color: #f1f3fc; */
   font-family: var(--secondary-font);
   font-weight: 600;
   text-transform: lowercase;
@@ -309,10 +310,11 @@ textarea {
   padding-right: 20px;
   padding-bottom: 0px;
   padding-left: 20px;
-  border-top: 0px none #000000;
+  /* border-top: 0px none #000000;
   border-right: 0px none #000000;
   border-bottom: 0px none #000000;
-  border-left: 0px none #000000;
+  border-left: 0px none #000000; */
+  border: 1px solid var(--white-color);
   border-radius: 0px;
   width: 100%;
   margin-bottom: 30px;
