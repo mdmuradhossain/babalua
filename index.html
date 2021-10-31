@@ -10,80 +10,82 @@
   <body>
     <!-- Start Header Section -->
     <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo"
-          ><img src="assets/images/logo.png" alt=""
-        /></a>
+      <div class="navbar-fixed">
+        <nav class="nav container" id="nav">
+          <a href="#" class="nav__logo"
+            ><img src="assets/images/logo.png" alt=""
+          /></a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">Consultancy</a>
-            </li>
-            <li class="nav__item">
-              <a href="#team" class="nav__link">Branding</a>
-            </li>
-            <li class="nav__item">
-              <a href="#testimonials" class="nav__link"
-                >Designing and Creativity</a
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">Consultancy</a>
+              </li>
+              <li class="nav__item">
+                <a href="#team" class="nav__link">Branding</a>
+              </li>
+              <li class="nav__item">
+                <a href="#testimonials" class="nav__link"
+                  >Designing and Creativity</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Events</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-x-lg"
+                viewBox="0 0 16 16"
               >
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Events</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
+                <path
+                  fill-rule="evenodd"
+                  d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"
+                />
+              </svg>
+            </div>
+          </div>
 
-          <div class="nav__close" id="nav-close">
+          <div class="nav__toggle" id="nav-toggle">
+            Menu
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
               fill="currentColor"
-              class="bi bi-x-lg"
+              class="bi bi-list-task"
               viewBox="0 0 16 16"
             >
               <path
                 fill-rule="evenodd"
-                d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"
+                d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"
+              />
+              <path
+                d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"
               />
               <path
                 fill-rule="evenodd"
-                d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"
+                d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"
               />
             </svg>
           </div>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          Menu
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-list-task"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"
-            />
-            <path
-              d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"
-            />
-            <path
-              fill-rule="evenodd"
-              d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"
-            />
-          </svg>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <div class="header-info">
         <h1 class="header-title">GDI Wonder Consulting</h1>
         <p class="header-text">
@@ -112,28 +114,6 @@
         <button>Get In Touch</button>
       </section>
       <section class="contact">
-        <div class="contact-info">
-          <div class="visit-us">
-            <h3>Or, even better, come visit us!</h3>
-            <span
-              >We love welcoming our clients, so please come by anytime during
-              business hours.</span
-            >
-          </div>
-          <div class="address">
-            <h3 class="addess-title">GDI Consulting</h3>
-            <span>Calle De Velázquez 27, 28001 Madrid, Madrid, Spain</span>
-          </div>
-          <div class="schedule">
-            <span>Mon 09:00 - 17:00</span><br />
-            <span>sea 09:00 - 17:00</span><br />
-            <span>Wed 09:00 - 17:00</span><br />
-            <span>Thu 09:00 - 17:00</span><br />
-            <span>Fri 09:00 - 17:00</span><br />
-            <span>Sat Closed</span><br />
-            <span>Sun Closed</span>
-          </div>
-        </div>
         <div class="contact-form">
           <h3 class="contact-title">Contact Us</h3>
           <form action="">
@@ -165,6 +145,28 @@
               </button>
             </div>
           </form>
+        </div>
+        <div class="contact-info">
+          <div class="visit-us">
+            <h3>Or, even better, come visit us!</h3>
+            <span
+              >We love welcoming our clients, so please come by anytime during
+              business hours.</span
+            >
+          </div>
+          <div class="address">
+            <h3 class="addess-title">GDI Consulting</h3>
+            <span>Calle De Velázquez 27, 28001 Madrid, Madrid, Spain</span>
+          </div>
+          <div class="schedule">
+            <span>Mon 09:00 - 17:00</span><br />
+            <span>sea 09:00 - 17:00</span><br />
+            <span>Wed 09:00 - 17:00</span><br />
+            <span>Thu 09:00 - 17:00</span><br />
+            <span>Fri 09:00 - 17:00</span><br />
+            <span>Sat Closed</span><br />
+            <span>Sun Closed</span>
+          </div>
         </div>
       </section>
       <!-- <section class="service">
