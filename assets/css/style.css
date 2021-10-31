@@ -426,6 +426,23 @@ textarea {
   }
 }
 
+@media screen and (max-width: 568px) {
+  .header-info {
+    padding-top: 120px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .lets-talk {
+    padding-top: 100px;
+    line-height: 1.6;
+    height: 50vh;
+  }
+
+  .lets-talk .lets-talk-heading-text {
+    font-size: 1.6rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav__menu {
     width: 30%;
