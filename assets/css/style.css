@@ -2,6 +2,7 @@
 
 :root {
   --header-height: 5rem;
+  --hue-color: 190;
 
   /* Colors */
   --primary-color: #4daf8f;
@@ -316,12 +317,26 @@ textarea {
 }
 
 .up-footer {
+  padding: 50px 0;
   display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
+.social-link {
+  padding: 20px 0;
+}
+.social-link a {
+  color: var(--text-color);
+}
 .down-footer {
   text-align: center;
+  padding-bottom: 10px;
+}
+
+.down-footer a {
+  color: var(--text-color);
+  font-size: 1rem;
 }
 /* --------
   Service
