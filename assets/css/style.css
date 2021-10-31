@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap");
 
 :root {
   --header-height: 5rem;
@@ -18,6 +18,7 @@
   /* Font */
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Raleway", sans-serif;
+  --header-title-font: "Anonymous Pro", monospace;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -142,6 +143,7 @@ img {
 }
 
 .header-title {
+  font-family: var(--header-title-font);
   color: var(--white-color);
   font-size: 1.8rem;
   font-weight: 600;

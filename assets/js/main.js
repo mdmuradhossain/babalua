@@ -37,3 +37,27 @@ function scrollHeader() {
   else header.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
+
+const headerTitle = document.getElementById("header-title");
+
+const typewriter = new Typewriter(headerTitle, {
+  loop: true,
+  delay: 95,
+});
+
+typewriter
+  .pauseFor(500)
+  .typeString("GDI Wonder Consulting")
+  .pauseFor(1000)
+  .start();
+const talkHeading = document.getElementById("talk-heading");
+const typewriter2 = new Typewriter(talkHeading, {
+  loop: true,
+  delay: 95,
+});
+
+typewriter2
+  .pauseFor(500)
+  .typeString("  ¿Busca servicios digitales exclusivos?")
+  .pauseFor(1000)
+  .start();
