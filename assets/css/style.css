@@ -153,6 +153,37 @@ img {
   color: var(--white-color);
   font-size: 1.5rem;
 }
+
+.header-buttons {
+  padding-top: 30px;
+}
+.header-buttons a {
+  color: var(--white-color);
+  padding: 15px 30px;
+  font-weight: 700;
+}
+.about-btn {
+  background-color: #07aaa5;
+  margin-right: 5px;
+  transition: all 0.3s ease-in;
+}
+
+.contact-btn {
+  margin-left: 5px;
+  background-color: #82b440;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #82b440;
+  border: 1px solid #07aaa5;
+}
+
+.contact-btn:hover {
+  background-color: #07aaa5;
+  border: 1px solid #82b440;
+}
+
 /* change background header */
 .scroll-header {
   background-color: var(--body-color);
@@ -414,6 +445,13 @@ textarea {
   .header-text {
     font-size: 1.6rem;
     font-weight: 600;
+  }
+
+  .header-buttons {
+    padding-top: 40px;
+  }
+  .header-buttons a {
+    padding: 20px 40px;
   }
   .about p {
     padding: 10px 60px;
