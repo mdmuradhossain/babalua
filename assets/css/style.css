@@ -207,7 +207,7 @@ img {
 }
 
 .button.talk:hover {
-  background-color: #74c8b8;
+  background-color: #82b440;
   color: #000;
 }
 /* Get In Touch */
@@ -215,6 +215,19 @@ img {
   text-align: center;
   padding: 50px;
   background-color: #ec768c;
+}
+.getintouch-btn {
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 15px 30px;
+  transition: all 0.3s ease-in;
+  border: none;
+  outline: none;
+}
+.getintouch-btn:hover {
+  background-color: #82b440;
+  color: var(--white-color);
 }
 /* ---------------
 Contact Us Section
