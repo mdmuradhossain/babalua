@@ -99,7 +99,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: 100% auto;
   background-blend-mode: overlay;
   height: 90vh;
 }
@@ -137,7 +137,7 @@ img {
 }
 
 .header-info {
-  padding-top: 270px;
+  padding-top: 280px;
   margin: 0 auto;
   text-align: center;
 }
@@ -150,6 +150,7 @@ img {
 }
 
 .header-text {
+  font-family: var(--secondary-font);
   color: var(--white-color);
   font-size: 1.5rem;
 }
@@ -459,7 +460,7 @@ textarea {
 
 @media screen and (max-width: 568px) {
   .header-info {
-    padding-top: 120px;
+    padding-top: 140px;
     margin: 0 auto;
     text-align: center;
   }
