@@ -89,12 +89,13 @@ img {
 /* Header Section */
 .header {
   width: 100%;
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-color: rgba(0, 0, 0, 0, 0.7);
+  background-blend-mode: overlay;
   height: 90vh;
 }
 
@@ -131,9 +132,20 @@ img {
 }
 
 .header-info {
-  padding-top: 250px;
+  padding-top: 260px;
   margin: 0 auto;
   text-align: center;
+}
+
+.header-title {
+  color: var(--white-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.header-text {
+  color: var(--white-color);
+  font-size: 1.5rem;
 }
 /* change background header */
 .scroll-header {
