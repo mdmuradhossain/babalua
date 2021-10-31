@@ -25,10 +25,6 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
-  /* Font Weight */
-  --font-medium: 500;
-  --font-semi-bold: 600;
-
   /* Z-Index */
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -86,6 +82,11 @@ img {
   height: auto;
 }
 
+.button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
 /* Header Section */
 .header {
   width: 100%;
@@ -186,8 +187,29 @@ img {
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 150px;
+  line-height: 2;
 }
 
+.lets-talk .title {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.lets-talk .lets-talk-heading-text {
+  font-size: 2rem;
+  color: #000;
+}
+
+.button.talk {
+  background-color: #07aaa5;
+  color: var(--white-color);
+  transition: all 0.3s ease-in;
+}
+
+.button.talk:hover {
+  background-color: #74c8b8;
+  color: #000;
+}
 /* Get In Touch */
 .get-in-touch {
   text-align: center;
